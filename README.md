@@ -36,7 +36,7 @@ All modalities are stored with timestamps to enable deterministic alignment duri
 
 ## Processing Workflow
 
-### Image Enhancement
+### 1. Image Enhancement
 **RGB Processing**
 - Color contrast enhancement (CLAHE)
 - Noise reduction (NLM)
@@ -45,16 +45,16 @@ All modalities are stored with timestamps to enable deterministic alignment duri
 **Depth Processing**
 - Depth completion via propagation-based filling
 
-### Mesh Segmentation
+### 2. Mesh Segmentation
 - Depth-based segmentation of iron mesh
 - Extraction of mesh region from background
 
-### Volume Estimation
+### 3. Volume Estimation
 - Extraction of segmented mesh region  
 - Depth-based height profile computation  
 - Frame-wise material volume estimation
 
-### Offline Multimodal Dataset Integration
+### 4. Offline Multimodal Dataset Integration
 For each synchronized frame:
 - Processed RGB Frame
 - Processed Depth Frame
