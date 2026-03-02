@@ -13,13 +13,14 @@ Using depth-guided mesh segmentation and frame-wise volume estimation, the pipel
 ## System Architecture
 The system follows an edge-based multimodal acquisition and synchronization architecture.
 
-###  Hardware Components
+### Components
 - NVIDIA Jetson Orin Nano  
 - Intel RealSense L515 (RGB-D + point cloud)  
 - Tachometer (conveyor belt velocity measurement)  
 - Hammer mill & crusher motor current sensors  
 - AWS cloud logging  
-- Remote SSH monitoring
+
+![System Architecture](assets/system_architecture.png)
 
 All sensor streams are timestamped and synchronized before dataset generation.
 
